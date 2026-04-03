@@ -36,8 +36,11 @@ function merge(arr1, arr2) {
 
 /**
  * 
- * @param {Array} arr1 
- * @param {Array} arr2 
+ * @param {Array} arr 
+ * @param {number} start 
+ * @param {number} middle 
+ * @param {number} end 
+ * @returns 
  */
 function merge2(arr, start, middle, end) {
     let arr1Idx = start;
@@ -88,6 +91,8 @@ function mergeSort(arr, start, end) {
         arr.splice(start, (end - start + 1), ...merged);
     }
 }
+
+module.exports = { merge, merge2, mergeSort };
 
 // const arrU = [1, 2, 0, 0, 5, 3, 4, -1, -2]
 // mergeSort(arrU, 0, arrU.length - 1);

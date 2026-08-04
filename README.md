@@ -1,64 +1,55 @@
 # Recursion
 
-Projeto de algoritmos recursivos desenvolvido como parte da trilha JavaScript do [The Odin Project](https://www.theodinproject.com/lessons/javascript-recursion), com foco em **recursao**, **divisao e conquista** e comparacao com abordagens iterativas.
+Recursive algorithms project developed as part of the JavaScript path of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript), with a focus on **recursion**, **divide and conquer**, and comparing iterative approaches.
 
-## Objetivo do Projeto
+## Project Objective
 
-O objetivo principal era praticar:
-- Implementacao da sequencia de Fibonacci de forma iterativa e recursiva
-- Entendimento de casos base e chamadas recursivas
-- Implementacao de Merge Sort com estrategia de divisao e conquista
-- Validacao das solucoes com testes automatizados
+The main objective was to practice:
+- Implementing the Fibonacci sequence iteratively and recursively
+- Understanding base cases and recursive calls
+- Implementing Merge Sort with a divide-and-conquer strategy
+- Validating solutions with automated tests
 
-## O que e?
+## What is it?
 
-Uma colecao de funcoes e testes para resolver os desafios da licao de Recursion:
+An assortment of functions and tests to solve the challenges from the Recursion lesson:
 - **Fibonacci**: `fibs` (iterativo) e `fibsRec` (recursivo)
 - **Merge Sort**: `merge`, `merge2` e `mergeSort`
 
-Conforme a proposta da licao, o projeto e executado via linha de comando (Node.js), sem interface grafica.
+As proposed by the lesson, the project runs from the command line (Node.js), without a graphical interface.
 
-## Como usar
+## How to use
 
-1. Entre na pasta do projeto
-```bash
-cd Javascript/top-recursion
-```
+1. Enter the project folder: `Javascript/top-restaurant-page`
+2. Install the dependencies:
+`npm install`
 
-2. Instale as dependencias
-```bash
-npm install
-```
+3. Run the tests:
+`npm test`
 
-3. Rode os testes
-```bash
-npm test
-```
+## Features
 
-## Funcionalidades
+- **`fibs(num)`**: returns the first `num` numbers in the Fibonacci sequence (iterative)
+- **`fibsRec(num, arr)`**: returns the first `num` Fibonacci numbers using recursion
+- **`merge(arr1, arr2)`**: merges two sorted lists into a new sorted list
+- **`merge2(arr, start, middle, end)`**: merges two sorted partitions within the same list
+- **`mergeSort(arr, start, end)`**: sorts a list with recursive Merge Sort
+- **Test coverage**: scenarios with sorted, reversed, repeated, empty, and negative-number arrays
 
-- **`fibs(num)`**: retorna os primeiros `num` numeros da sequencia de Fibonacci (iterativo)
-- **`fibsRec(num, arr)`**: retorna os primeiros `num` numeros de Fibonacci usando recursao
-- **`merge(arr1, arr2)`**: mescla duas listas ordenadas em uma nova lista ordenada
-- **`merge2(arr, start, middle, end)`**: mescla duas particoes ordenadas dentro da mesma lista
-- **`mergeSort(arr, start, end)`**: ordena uma lista com Merge Sort de forma recursiva
-- **Cobertura de testes**: cenarios com arrays ordenados, invertidos, repetidos, vazios e com negativos
+## File Structure
 
-## Estrutura de Arquivos
+- `fibonacci.js`: Fibonacci implementations
+- `fibonacci.spec.js`: Fibonacci function tests
+- `merge-sort.js`: helper implementations and Merge Sort
+- `mergeSort.spec.js`: merge and sorting function tests
 
-- `fibonacci.js`: implementacoes de Fibonacci
-- `fibonacci.spec.js`: testes das funcoes de Fibonacci
-- `merge-sort.js`: implementacoes auxiliares e Merge Sort
-- `mergeSort.spec.js`: testes das funcoes de merge e ordenacao
-- `package.json`: scripts e dependencias
-
-## Tecnologias Utilizadas
+## Technologies Used
 
 - JavaScript (Node.js / CommonJS)
 - Jest
 
 ---
 
-Projeto desenvolvido seguindo: [The Odin Project - Recursion](https://www.theodinproject.com/lessons/javascript-recursion)
+Project developed following: [The Odin Project - Recursion](https://www.theodinproject.com/lessons/javascript-recursion)
 
-📍 **Repositorio principal com todos os projetos**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
+📍 **Main repository with all projects**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
